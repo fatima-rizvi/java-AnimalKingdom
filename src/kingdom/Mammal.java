@@ -9,17 +9,17 @@ public class Mammal extends Animal {
   }
 
   @Override
-    public String move() {
+    public void move() {
       System.out.println("walk");
     }
 
   @Override
-    public String breathe() {
+    public void breathe() {
       System.out.println("lungs");
     }
 
   @Override
-    public String reproduce() {
+    public void reproduce() {
       System.out.println("live births");
     }
 

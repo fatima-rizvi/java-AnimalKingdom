@@ -5,13 +5,15 @@ package kingdom;
 public abstract class Animal {
   protected static int maxId = 0;
   protected int id;
+  protected String type;
   protected String name;
   protected int year;
 
   //Constructor
-  public Animal (String name, int year) {
+  public Animal (String type, String name, int year) {
     maxId++;
     this.id = maxId;
+    this.type = type;
     this.name = name;
     this.year = year;
   }
@@ -19,6 +21,10 @@ public abstract class Animal {
   //getters
   public int getId() {
     return id;
+  }
+
+  public String getType() {
+    return type;
   }
 
   public String getName() {
@@ -30,6 +36,10 @@ public abstract class Animal {
   }
 
   //setters
+  public void setType(String type) {
+    this.type = type;
+  }
+
   public void setName(String name) {
     this.name = name;
   }

@@ -9,17 +9,17 @@ public class Fish extends Animal {
   }
 
   @Override
-    public String move() {
+    public void move() {
       System.out.println("swim");
     }
 
   @Override
-    public String breathe() {
+    public void breathe() {
       System.out.println("gills");
     }
 
   @Override
-    public String reproduce() {
+    public void reproduce() {
       System.out.println("eggs");
     }
 
