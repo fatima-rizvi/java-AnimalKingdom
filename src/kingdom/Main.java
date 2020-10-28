@@ -52,8 +52,16 @@ public class Main {
     // System.out.println();
 
     //List only animals who breathe with their lungs
-    System.out.println("Animals that breathe with lungs: ");
-    printFilteredList(animalList, (a) -> a.breathe() == "lungs");
+    // System.out.println("Animals that breathe with lungs: ");
+    // printFilteredList(animalList, (a) -> a.breathe() == "lungs");
+
+    //List only animals that breathe with their lungs and were named in 1758
+    // System.out.println("Animals that breathe with lungs and were named in 1758: ");
+    // printFilteredList(animalList, (a) -> a.breathe() == "lungs" && a.getYear() == 1758);
+
+    //List only animals that lay eggs and breathe with their lungs
+    System.out.println("Animals that lay eggs and breathe with their lungs: ");
+    printFilteredList(animalList, (a) -> a.breathe() == "lungs" && a.reproduce() == "eggs");
 
   }
 
