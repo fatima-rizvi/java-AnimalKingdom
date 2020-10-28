@@ -33,17 +33,17 @@ public class Main {
     //animalList.forEach((a) -> System.out.println(a));
 
     //List all animals in descending order by year named
-    System.out.println("Descending order by year named: ");
-    animalList.sort((a1, a2) -> (a1.getYear() < a2.getYear()) ? 1 : -1);
-    animalList.forEach((a) -> System.out.println(a));
-    System.out.println();
+    // System.out.println("Descending order by year named: ");
+    // animalList.sort((a1, a2) -> (a1.getYear() < a2.getYear()) ? 1 : -1);
+    // animalList.forEach((a) -> System.out.println(a));
+    // System.out.println();
     //System.out.println(animalList);
 
     //List all animals alphabetically
-    // System.out.println("Alphabetically: ");
-    // animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
-    // animalList.forEach((a) -> System.out.println(a));
-    // System.out.println();
+    System.out.println("Alphabetically: ");
+    animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+    animalList.forEach((a) -> System.out.println(a));
+    System.out.println();
 
     //List all animals by how they move
     // System.out.println("List all animals by how they move: ");
