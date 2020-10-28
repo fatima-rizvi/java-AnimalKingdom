@@ -69,6 +69,12 @@ public class Main {
     animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
     printFilteredList(animalList, (a) -> a.getYear() == 1758);
 
+    //STRETCH GOAL: List only mammals alphabetically
+    System.out.println("*****STRETCH GOAL*****");
+    System.out.println("List alphabetically those animals that are mammals: ");
+    animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+    printFilteredList(animalList, (a) -> a instanceof Mammal);
+
   }
 
   //Filter method
