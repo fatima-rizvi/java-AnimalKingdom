@@ -84,4 +84,8 @@ public abstract class Animal {
     return "Animals{id=" + id + ", name='" + name + "', yearNamed=" + year + "}";
   }
 
+  public String toStringAnimal() {
+    return getName() + " " + reproduce() + " " + move() + " " + breathe() + " " + getYear();
+  }
+
 }

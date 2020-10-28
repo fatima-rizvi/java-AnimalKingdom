@@ -46,26 +46,26 @@ public class Main {
     // System.out.println();
 
     //List all animals by how they move
-    System.out.println("List all animals by how they move: ");
-    animalList.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
-    animalList.forEach((a) -> System.out.println(a));
-    System.out.println();
+    // System.out.println("List all animals by how they move: ");
+    // animalList.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+    // animalList.forEach((a) -> System.out.println(a));
+    // System.out.println();
 
     //List only animals who breathe with their lungs
-    // System.out.println("Animals that breathe with lungs: ");
-    // printFilteredList(animalList, (a) -> a.breathe() == "lungs");
+    System.out.println("Animals that breathe with lungs: ");
+    printFilteredList(animalList, (a) -> a.breathe() == "lungs");
 
   }
 
   //Filter method
-  // public static void printFilteredList(List<Animal> animalList, AnimalTester animalTester){
-  //   //things that can hold the parent (fish) can hold the child (koi)
-  //   for (Animal a : animalList) {
-  //     if (animalTester.test(a)) {
-  //       System.out.println(a);
-  //     }
-  //     System.out.println();
-  //   }
-  // }
+  public static void printFilteredList(List<Animal> animalList, AnimalTester animalTester){
+    //things that can hold the parent (fish) can hold the child (koi)
+    for (Animal a : animalList) {
+      if (animalTester.test(a)) {
+        System.out.println(a.toStringAnimal());
+      }
+      System.out.println();
+    }
+  }
 
 }
