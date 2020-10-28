@@ -60,8 +60,14 @@ public class Main {
     // printFilteredList(animalList, (a) -> a.breathe() == "lungs" && a.getYear() == 1758);
 
     //List only animals that lay eggs and breathe with their lungs
-    System.out.println("Animals that lay eggs and breathe with their lungs: ");
-    printFilteredList(animalList, (a) -> a.breathe() == "lungs" && a.reproduce() == "eggs");
+    // System.out.println("Animals that lay eggs and breathe with their lungs: ");
+    // printFilteredList(animalList, (a) -> a.breathe() == "lungs" && a.reproduce() == "eggs");
+
+    //List alphabetically only animals that were named in 1758
+    //They're already alphabetical from earlier test, but i'll redo it.
+    System.out.println("List alphabetically animals that were named in 1758: ");
+    animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+    printFilteredList(animalList, (a) -> a.getYear() == 1758);
 
   }
 
@@ -72,7 +78,7 @@ public class Main {
       if (animalTester.test(a)) {
         System.out.println(a.toStringAnimal());
       }
-      System.out.println();
+      //System.out.println();
     }
   }
 
