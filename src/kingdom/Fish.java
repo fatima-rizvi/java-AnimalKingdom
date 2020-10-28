@@ -8,21 +8,6 @@ public class Fish extends Animal {
     super("Fish", name, year);
   }
 
-  // @Override
-  //   public void move() {
-  //     System.out.println("swim");
-  //   }
-  //
-  // @Override
-  //   public void breathe() {
-  //     System.out.println("gills");
-  //   }
-  //
-  // @Override
-  //   public void reproduce() {
-  //     System.out.println("eggs");
-  //   }
-
   @Override
     public String move() {
       return "swim";

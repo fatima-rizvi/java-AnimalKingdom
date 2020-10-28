@@ -8,21 +8,6 @@ public class Mammal extends Animal {
     super("Mammal", name, year);
   }
 
-  // @Override
-  //   public String move() {
-  //     System.out.println("walk");
-  //   }
-  //
-  // @Override
-  //   public void breathe() {
-  //     System.out.println("lungs");
-  //   }
-  //
-  // @Override
-  //   public void reproduce() {
-  //     System.out.println("live births");
-  //   }
-
   @Override
     public String move() {
       return "walk";

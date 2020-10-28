@@ -48,19 +48,6 @@ public abstract class Animal {
     this.year = year;
   }
 
-  //Other methods
-  // public void move() {
-  //   System.out.println("Default");
-  // }
-  //
-  // public void breathe() {
-  //   System.out.println("Default");
-  // }
-  //
-  // public void reproduce() {
-  //   System.out.println("Default");
-  // }
-
   public String move() {
     return "default";
   }
@@ -72,12 +59,6 @@ public abstract class Animal {
   public String reproduce() {
     return "default";
   }
-
-  // @Override
-  // public String toString() {
-  //   return "Name: " + name + "\n" +
-  //   "Year: " + year;
-  // }
 
   @Override
   public String toString() {
