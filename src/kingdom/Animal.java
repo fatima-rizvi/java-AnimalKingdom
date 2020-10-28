@@ -61,10 +61,15 @@ public abstract class Animal {
     System.out.println("Default");
   }
 
+  // @Override
+  // public String toString() {
+  //   return "Name: " + name + "\n" +
+  //   "Year: " + year;
+  // }
+
   @Override
   public String toString() {
-    return "Name: " + name + "\n" +
-    "Year: " + year;
+    return "Animals{id=" + id + ", name='" + name + "', yearNamed=" + year + "}";
   }
 
 }
