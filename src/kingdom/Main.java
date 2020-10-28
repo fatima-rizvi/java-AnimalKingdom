@@ -40,16 +40,16 @@ public class Main {
     //System.out.println(animalList);
 
     //List all animals alphabetically
-    System.out.println("Alphabetically: ");
-    animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
-    animalList.forEach((a) -> System.out.println(a));
-    System.out.println();
-
-    //List all animals by how they move
-    // System.out.println("List all animals by how they move: ");
-    // animalList.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+    // System.out.println("Alphabetically: ");
+    // animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
     // animalList.forEach((a) -> System.out.println(a));
     // System.out.println();
+
+    //List all animals by how they move
+    System.out.println("List all animals by how they move: ");
+    animalList.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+    animalList.forEach((a) -> System.out.println(a));
+    System.out.println();
 
     //List only animals who breathe with their lungs
     // System.out.println("Animals that breathe with lungs: ");

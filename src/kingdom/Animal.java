@@ -49,16 +49,28 @@ public abstract class Animal {
   }
 
   //Other methods
-  public void move() {
-    System.out.println("Default");
+  // public void move() {
+  //   System.out.println("Default");
+  // }
+  //
+  // public void breathe() {
+  //   System.out.println("Default");
+  // }
+  //
+  // public void reproduce() {
+  //   System.out.println("Default");
+  // }
+
+  public String move() {
+    return "default";
   }
 
-  public void breathe() {
-    System.out.println("Default");
+  public String breathe() {
+    return "default";
   }
 
-  public void reproduce() {
-    System.out.println("Default");
+  public String reproduce() {
+    return "default";
   }
 
   // @Override

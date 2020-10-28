@@ -8,19 +8,34 @@ public class Bird extends Animal {
     super("Bird", name, year);
   }
 
+  // @Override
+  //   public void move() {
+  //     System.out.println("fly");
+  //   }
+  //
+  // @Override
+  //   public void breathe() {
+  //     System.out.println("lungs");
+  //   }
+  //
+  // @Override
+  //   public void reproduce() {
+  //     System.out.println("eggs");
+  //   }
+
   @Override
-    public void move() {
-      System.out.println("fly");
+    public String move() {
+      return "fly";
     }
 
   @Override
-    public void breathe() {
-      System.out.println("lungs");
+    public String breathe() {
+      return "lungs";
     }
 
   @Override
-    public void reproduce() {
-      System.out.println("eggs");
+    public String reproduce() {
+      return "eggs";
     }
 
 }
